@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+#logo {
+    max-width: 300px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+@font-face {
+    font-family: 'LOKICOLA';
+    src: url(Coca-Cola/loki-cola/LOKICOLA.TTF) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: 'LOKICOLA', sans-serif;
+    font-size: 3em;
+}
+
+/* Hero Image */
+#hero {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Fixed Buttons (Dark Mode and Top) */
+#dark-icon, #top-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#top-icon {
+    right: 20px;
+    bottom: 80px;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f9f9f9;
+}
+  
+header.dark-mode,
+footer.dark-mode,
+main.dark-mode {
+    background-color: #1a1a1a;
+}
+
+#contactForm.dark-mode {
+    color: #f9f9f9;
+}
+  
+
+/* main */
+main {
+    display: block;
+    padding: 50px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-family: 'LOKICOLA', sans-serif;
+    font-size: 2.5em;
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#about img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Products Section */
+#products {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#productDisplay img {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    margin: 20px 0;
+}
+
+#productButtons {
+    margin-top: 20px;
+}
+
+#productButtons button {
+    margin: 0 10px;
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 15px;
+    border-style: none;
+    background-color: #F40009;
+    color: #1E1E1E;
+}
+
+#productButtons button:hover {
+    background-color: #1E1E1E;
+    color: #F40009;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Hide class (for swapping products) */
+.hide {
+    display: none;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+/* Play and Win Section */
+#play {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#play form {
+    margin-top: 20px;
+}
+
+#userGuess {
+    width: 80px;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#guessButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #F40009;
+    color: #1E1E1E;
+}
+
+#gameResult {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Contact Form */
+#contactForm {
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+#contactCake label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contactCake input[type="text"],
+#contactCake input[type="tel"],
+#contactCake input[type="email"],
+#contactCake textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contactCake fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+#contactCake .custom-radio {
+    margin-right: 20px;
+}
+
+#contactCake input[type="radio"] {
+    margin-right: 5px;
+}
+
+#mySubmit {
+    display: block;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Error spans */
+span.hide {
+    display: none;
+}
+
+span.required {
+    color: red;
+}
+
+/* Modal Popup */
+#thanksModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#modalContent {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    max-width: 400px;
+    width: 90%;
+}
+
+#modalCloseBtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+  
+#thanksModal.show {
+    display: block;
+}
+  
+.hide {
+    display: none;
+}
+  
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 40px 0 0;
+    padding: 50px 0 50px;
+    background-color: #1E1E1E;
+}
+
+footer .social-icons {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+}
+
+/* responsive style */
+
+@media (max-width: 500px) {
+    nav ul li a {
+        font-size: 1.25em;
+    }
+}
