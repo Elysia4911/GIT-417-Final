@@ -35,6 +35,8 @@ nav ul li {
     margin: 0 15px;
 }
 
+/* Coca-Cola Fonts */
+
 @font-face {
     font-family: 'LOKICOLA';
     src: url(Coca-Cola/loki-cola/LOKICOLA.TTF) format('truetype');
@@ -204,18 +206,19 @@ h2 {
     margin: 40px auto;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    background-color: #F40009;
 }
 
-#contactCake label {
+#contactCocaCola label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-#contactCake input[type="text"],
-#contactCake input[type="tel"],
-#contactCake input[type="email"],
-#contactCake textarea {
+#contactCocaCola input[type="text"],
+#contactCocaCola input[type="tel"],
+#contactCocaCola input[type="email"],
+#contactCocaCola textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
@@ -223,16 +226,16 @@ h2 {
     border-radius: 4px;
 }
 
-#contactCake fieldset {
+#contactCocaCola fieldset {
     border: none;
     margin-bottom: 15px;
 }
 
-#contactCake .custom-radio {
+#contactCocaCola .custom-radio {
     margin-right: 20px;
 }
 
-#contactCake input[type="radio"] {
+#contactCocaCola input[type="radio"] {
     margin-right: 5px;
 }
 
@@ -305,7 +308,12 @@ footer {
     text-align: center;
     margin: 40px 0 0;
     padding: 50px 0 50px;
-    background-color: #1E1E1E;
+    background-color: #ccc;
+    color: #f9f9f9;
+}
+
+footer a {
+    text-decoration: none;
 }
 
 footer .social-icons {
