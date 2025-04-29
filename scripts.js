@@ -77,7 +77,7 @@ gameForm.addEventListener('submit', function(e) {
 });
 
 // CONTACT FORM VALIDATION + MODAL POPUP
-const contactForm = document.getElementById('contactCake');
+const contactForm = document.getElementById('contactCocaCola');
 const fName = document.getElementById('fName');
 const number = document.getElementById('number');
 const email = document.getElementById('email');
